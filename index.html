@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===============================
+         Background Effects
+    ================================= -->
+
+    <div id="stars"></div>
+    <div id="hearts"></div>
+
+    <!-- ===============================
+         Background Music
+    ================================= -->
+
+    <audio id="bgMusic" loop>
+        <source src="assets/music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ===============================
+         Scene 1 : Welcome
+    ================================= -->
+
+    <section class="page active" id="page1">
+
+        <div class="glass">
+
+            <h1>🎁</h1>
+
+            <h2>A Surprise Just For You</h2>
+
+            <h3>Happy Birthday My Lovely Sister ❤️</h3>
+
+            <p>
+                I made something special for you...
+                <br><br>
+                Click below to begin your magical surprise.
+            </p>
+
+            <button id="startBtn">
+                Open Surprise 💖
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Scene 2 : Envelope
+    ================================= -->
+
+    <section class="page" id="page2">
+
+        <div class="glass">
+
+            <h2>💌 A Letter For You</h2>
+
+            <img
+                id="envelope"
+                src="assets/image/envelope.webp"
+                alt="Envelope">
+
+            <br>
+
+            <button id="openEnvelope">
+                Open Letter
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Scene 3 : Birthday Letter
+    ================================= -->
+
+    <section class="page" id="page3">
+
+        <div class="letter">
+
+            <h2>Happy Birthday ❤️</h2>
+
+            <p id="letterText"></p>
+
+            <button id="nextToCake">
+                Continue 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Scene 4 : Cake
+    ================================= -->
+
+    <section class="page" id="page4">
+
+        <div class="glass">
+
+            <h2>Make A Wish 🌟</h2>
+
+            <img
+                class="cake"
+                src="assets/image/birthday-cake.png"
+                alt="Cake">
+
+            <button id="blowBtn">
+                Blow Candle 🕯️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Scene 5 : Age Question
+    ================================= -->
+
+    <section class="page" id="page5">
+
+        <div class="glass">
+
+            <h2>One Question 😊</h2>
+
+            <h3>How old are you today?</h3>
+
+            <input
+                type="number"
+                id="ageInput"
+                placeholder="Enter your age">
+
+            <button id="submitAge">
+                Submit
+            </button>
+
+            <p id="ageMessage"></p>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Scene 6 : Memories
+    ================================= -->
+
+    <section class="page" id="page6">
+
+        <div class="glass">
+
+            <h2>Beautiful Memories 📸</h2>
+
+            <div class="gallery">
+
+                <img src="assets/image/sister1.jpg">
+
+                <img src="assets/image/sister2.jpg">
+
+                <img src="assets/image/sister3.jpg">
+
+            </div>
+
+            <button id="finalBtn">
+                Final Surprise ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Scene 7 : Ending
+    ================================= -->
+
+    <section class="page" id="page7">
+
+        <div class="glass">
+
+            <h1>🎉 Happy Birthday 🎉</h1>
+
+            <h2>My Dearest Sister ❤️</h2>
+
+            <p>
+
+                Thank you for always being there.
+
+                <br><br>
+
+                I hope your smile never fades.
+
+                <br><br>
+
+                May all your dreams come true.
+
+                <br><br>
+
+                I love you so much. 💖
+
+            </p>
+
+            <button onclick="location.reload()">
+                Watch Again 🔄
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
